@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohan K | Portfolio & LeetCode Tracker</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0f19;
+    }
+    .code-font {
+      font-family: 'Fira Code', monospace;
+    }
+    .glow-cyan {
+      box-shadow: 0 0 20px rgba(0, 247, 255, 0.15);
+    }
+    /* Loading spinner animation */
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .spinner {
+      border: 3px solid rgba(255,255,255,0.1);
+      border-radius: 50%;
+      border-top-color: #00F7FF;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="text-slate-200 min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-slate-900">
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-4xl w-full mx-auto px-6 py-12 flex-grow">
+    
+    <!-- HERO SECTION -->
+    <header class="text-center md:text-left md:flex justify-between items-center border-b border-slate-800 pb-10 mb-10">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
+          Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Mohan K</span>
+        </h1>
+        <p class="text-cyan-400 font-medium mt-2 tracking-wide uppercase text-sm code-font">
+          &lt; Full Stack Web Developer /&gt;
+        </p>
+        <p class="text-slate-400 mt-4 max-w-lg leading-relaxed">
+          I craft elegant, high-performance web applications using modern technologies. 
+          I love solving complex problems, writing clean code, and turning coffee into scalable software.
+        </p>
+      </div>
+      
+      <!-- Avatar/GIF -->
+      <div class="mt-6 md:mt-0 flex justify-center">
+        <div class="relative group">
+          <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full blur opacity-40 group-hover:opacity-75 transition duration-1000"></div>
+          <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" alt="Coding GIF" class="relative rounded-full w-32 h-32 md:w-40 md:h-40 object-cover border-2 border-cyan-400">
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT & LINKS -->
+    <section class="grid md:grid-cols-2 gap-8 mb-12">
+      <!-- Info Card -->
+      <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 glow-cyan">
+        <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-user text-cyan-400"></i> About Me
+        </h3>
+        <ul class="space-y-3 text-slate-300 text-sm">
+          <li class="flex items-start gap-2">
+            <span class="text-cyan-400">🌱</span> <span>Currently learning: <strong>Advanced Full Stack Tech</strong></span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-cyan-400">💬</span> <span>Ask me about: <strong>React, Next.js, JS, Python</strong></span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-cyan-400">⚡</span> <span>Fun Fact: <strong>I turn coffee ☕ into code 💻</strong></span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Quick Links Card -->
+      <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+        <div>
+          <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-link text-cyan-400"></i> Connect with Me
+          </h3>
+          <p class="text-xs text-slate-400 mb-4">Feel free to visit my links or drop an email!</p>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <a href="https://mohan-k-nov8.vercel.app/" target="_blank" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-100 py-2.5 px-4 rounded-xl text-xs font-semibold transition-all duration-300">
+            <i class="fa-solid fa-globe text-emerald-400"></i> Portfolio Website
+          </a>
+          <a href="mailto:mohantn617@gmail.com" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-100 py-2.5 px-4 rounded-xl text-xs font-semibold transition-all duration-300">
+            <i class="fa-solid fa-envelope text-red-400"></i> Email Me
+          </a>
+          <a href="https://leetcode.com/u/MohanK_2026/" target="_blank" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-100 py-2.5 px-4 rounded-xl text-xs font-semibold transition-all duration-300">
+            <i class="fa-solid fa-code text-amber-400"></i> LeetCode Profile
+          </a>
+          <a href="https://github.com/MohanK-2026" target="_blank" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-100 py-2.5 px-4 rounded-xl text-xs font-semibold transition-all duration-300">
+            <i class="fa-brands fa-github text-white"></i> GitHub Profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REAL-TIME LEETCODE STATS SECTION -->
+    <section class="bg-slate-900/40 border border-slate-800 rounded-2xl p-6 md:p-8 relative overflow-hidden">
+      <div class="absolute top-0 right-0 p-4 opacity-10">
+        <i class="fa-solid fa-terminal text-9xl text-cyan-400"></i>
+      </div>
+      
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
+        <div>
+          <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-chart-line text-cyan-400"></i> LeetCode Real-Time Stats
+          </h2>
+          <p class="text-sm text-slate-400 mt-1">Live data fetched dynamically for <strong>MohanK_2026</strong></p>
+        </div>
+        <a href="https://leetcode.com/u/MohanK_2026/" target="_blank" class="text-xs bg-cyan-500/10 text-cyan-400 border border-cyan-400/20 px-3 py-1.5 rounded-full hover:bg-cyan-500/20 transition-all">
+          View Original Profile <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+        </a>
+      </div>
+
+      <!-- Loading State -->
+      <div id="lc-loading" class="flex flex-col items-center justify-center py-12">
+        <div class="spinner mb-4"></div>
+        <p class="text-slate-400 text-sm">Fetching LeetCode stats...</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="lc-error" class="hidden text-center py-12">
+        <i class="fa-solid fa-circle-exclamation text-red-400 text-3xl mb-3"></i>
+        <p class="text-red-400 font-medium">Failed to fetch LeetCode data.</p>
+        <button onclick="fetchStats()" class="mt-4 px-4 py-2 bg-slate-800 text-xs rounded-lg hover:bg-slate-700 transition">Try Again</button>
+      </div>
+
+      <!-- Stats Content Dashboard -->
+      <div id="lc-dashboard" class="hidden">
+        <!-- Highlights Row -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div class="bg-slate-950/50 p-4 rounded-xl border border-slate-800 text-center">
+            <p class="text-xs text-slate-400 uppercase font-semibold">Total Solved</p>
+            <p id="total-solved" class="text-3xl font-extrabold text-white mt-1 font-mono">-</p>
+          </div>
+          <div class="bg-slate-950/50 p-4 rounded-xl border border-slate-800 text-center">
+            <p class="text-xs text-slate-400 uppercase font-semibold">Acceptance Rate</p>
+            <p id="acceptance-rate" class="text-3xl font-extrabold text-cyan-400 mt-1 font-mono">-%</p>
+          </div>
+          <div class="bg-slate-950/50 p-4 rounded-xl border border-slate-800 text-center">
+            <p class="text-xs text-slate-400 uppercase font-semibold">Global Ranking</p>
+            <p id="global-ranking" class="text-2xl font-extrabold text-white mt-2 font-mono">-</p>
+          </div>
+          <div class="bg-slate-950/50 p-4 rounded-xl border border-slate-800 text-center">
+            <p class="text-xs text-slate-400 uppercase font-semibold">Total Questions</p>
+            <p id="total-questions" class="text-3xl font-semibold text-slate-500 mt-1 font-mono">-</p>
+          </div>
+        </div>
+
+        <!-- Breakdown Progress Bars -->
+        <div class="space-y-6 bg-slate-950/30 p-6 rounded-xl border border-slate-800">
+          <h4 class="text-sm font-semibold text-white mb-2 uppercase tracking-wider">Problem Breakdown</h4>
+          
+          <!-- Easy -->
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-1">
+              <span class="text-emerald-400 flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> Easy
+              </span>
+              <span id="easy-ratio" class="text-slate-400 font-mono">0 / 0</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-3.5">
+              <div id="easy-progress" class="bg-emerald-400 h-3.5 rounded-full transition-all duration-1000" style="width: 0%"></div>
+            </div>
+          </div>
+
+          <!-- Medium -->
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-1">
+              <span class="text-amber-400 flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> Medium
+              </span>
+              <span id="medium-ratio" class="text-slate-400 font-mono">0 / 0</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-3.5">
+              <div id="medium-progress" class="bg-amber-400 h-3.5 rounded-full transition-all duration-1000" style="width: 0%"></div>
+            </div>
+          </div>
+
+          <!-- Hard -->
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-1">
+              <span class="text-rose-500 flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span> Hard
+              </span>
+              <span id="hard-ratio" class="text-slate-400 font-mono">0 / 0</span>
+            </div>
+            <div class="w-full bg-slate-800 rounded-full h-3.5">
+              <div id="hard-progress" class="bg-rose-500 h-3.5 rounded-full transition-all duration-1000" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-900 bg-slate-950 py-6 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2">
+      <p>© 2024 Mohan K. Handcrafted with passion.</p>
+      <p class="code-font text-cyan-500/80">Keep coding, keep growing.</p>
+    </div>
+  </footer>
+
+  <!-- LEETCODE FETCH SCRIPT -->
+  <script>
+    async function fetchStats() {
+      const username = 'MohanK_2026';
+      
+      const loadingEl = document.getElementById('lc-loading');
+      const errorEl = document.getElementById('lc-error');
+      const dashboardEl = document.getElementById('lc-dashboard');
+
+      // Reset states
+      loadingEl.classList.remove('hidden');
+      errorEl.classList.add('hidden');
+      dashboardEl.classList.add('hidden');
+
+      try {
+        // Fetching data from a trusted LeetCode statistics open API
+        const response = await fetch(`https://leetcode-stats-api.herokuapp.com/${username}`);
+        if (!response.ok) throw new Error('API Request Failed');
+        
+        const data = await response.json();
+        
+        if (data.status === 'success') {
+          // 1. Populate Highlights Card stats
+          document.getElementById('total-solved').innerText = data.totalSolved;
+          document.getElementById('acceptance-rate').innerText = `${data.acceptanceRate}%`;
+          document.getElementById('global-ranking').innerText = data.ranking.toLocaleString();
+          document.getElementById('total-questions').innerText = `/ ${data.totalQuestions}`;
+
+          // 2. Format Ratio Strings
+          document.getElementById('easy-ratio').innerText = `${data.easySolved} / ${data.totalEasy}`;
+          document.getElementById('medium-ratio').innerText = `${data.mediumSolved} / ${data.totalMedium}`;
+          document.getElementById('hard-ratio').innerText = `${data.hardSolved} / ${data.totalHard}`;
+
+          // 3. Calculate Percentages for Progress Bars
+          const easyPercent = (data.easySolved / data.totalEasy) * 100;
+          const mediumPercent = (data.mediumSolved / data.totalMedium) * 100;
+          const hardPercent = (data.hardSolved / data.totalHard) * 100;
+
+          // 4. Update Progress Bar Widths (Timeout enables animation transition effect)
+          setTimeout(() => {
+            document.getElementById('easy-progress').style.width = `${easyPercent}%`;
+            document.getElementById('medium-progress').style.width = `${mediumPercent}%`;
+            document.getElementById('hard-progress').style.width = `${hardPercent}%`;
+          }, 100);
+
+          // Hide Loading & Show Dashboard
+          loadingEl.classList.add('hidden');
+          dashboardEl.classList.remove('hidden');
+        } else {
+          throw new Error('User not found or invalid API response format');
+        }
+      } catch (err) {
+        console.error('Error fetching LeetCode API details:', err);
+        loadingEl.classList.add('hidden');
+        errorEl.classList.remove('hidden');
+      }
+    }
+
+    // Run fetch on load
+    window.addEventListener('DOMContentLoaded', fetchStats);
+  </script>
+</body>
+</html>
